@@ -1,1 +1,16 @@
-<!-- Admin Dashboard HTML -->
+<!-- Admin Dashboard HTML --><!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <meta http-equiv="refresh" content="15">
+    <style>
+        body { font-family: Arial; text-align: center; padding: 50px; }
+        img { width: 300px; height: 300px; }
+    </style>
+</head>
+<body>
+    <h1>Live QR Code</h1>
+    <img src="{{ url_for('static', filename='qr/session_' + str(session_id) + '.png') }}" alt="QR Code">
+    <p>QR refreshes every 15 seconds</p>
+</body>
+</html>
